@@ -1,4 +1,4 @@
-package tests.proje02;
+package tests.project02;
 
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
