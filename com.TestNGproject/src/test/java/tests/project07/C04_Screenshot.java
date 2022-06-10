@@ -10,14 +10,14 @@ public class C04_Screenshot extends TestBase {
 
     @Test
     public void screenTest(){
-        driver.get("https://www.google.be");
-        driver.findElement(By.xpath("//div[text()='Tout accepter']")).click();
+        driver.get("https://www.google.com");
+        driver.findElement(By.xpath("(//div[@class='QS5gu sy4vM'])[2]")).click();
 
         TakesScreenshot tss = (TakesScreenshot) driver;
 
-       // File pageScreenshot = new File("src//pageFileScreenShot.png");
+       File pageScreenshot = new File("src//pageFileScreenShot.png");
 
-        //pageScreenshot = tss.getScreenshotAs(OutputType.FILE);
+        pageScreenshot = tss.getScreenshotAs(OutputType.FILE);
 
         WebElement elementLogo = driver.findElement(By.xpath("(//img[@alt='Google'])[1]"));
 
